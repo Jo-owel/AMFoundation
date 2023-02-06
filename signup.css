@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 100px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+}
+.email{
+font-style: italic;
+grid-column-start: span 3;
+}
+.username{
+font-style: italic;
+grid-column-start: span 3;
+}
+.password{
+    font-style: italic;
+    grid-column-start: span 3;
+}
+@media(max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 100px;
+    }
+    .email,.username,.password{
+        grid-column-start: span 3;
+    }
+
+
+}
